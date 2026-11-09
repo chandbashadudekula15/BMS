@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Book Management System</h1>
+
+        <div class="form">
+            <input type="hidden" id="bookId">
+
+            <input type="text" id="title"
+                placeholder="Enter Book Title">
+
+            <input type="text" id="author"
+                placeholder="Enter Author Name">
+
+            <button onclick="addBook()">Add Book</button>
+        </div>
+
+        <h2>Books List</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Book Title</th>
+                    <th>Author</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody id="bookList">
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
